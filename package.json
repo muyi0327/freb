@@ -1,0 +1,26 @@
+{
+    "name": "freb",
+    "version": "0.1.0",
+    "description": " A front-end project build tools",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "freb",
+        "front-end"
+    ],
+    "author": "youlai",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/muyi0327/freb/issues",
+        "email": "yfdezhuye@163.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:muyi0327/freb.git"
+    }
+}

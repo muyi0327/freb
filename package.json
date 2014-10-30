@@ -3,11 +3,14 @@
     "version": "0.1.0",
     "description": " A front-end project build tools",
     "main": "index.js",
+    "bin": {
+        "freb": "./bin/freb"
+    },
     "directories": {
         "test": "test"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "node test/all.js"
     },
     "keywords": [
         "freb",

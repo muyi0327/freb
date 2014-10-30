@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var fs = require('fs');
+var freb = require('../lib/freb.js');
+var file = process.argv.slice(2);
+
+freb.lower(process.cwd() + file);

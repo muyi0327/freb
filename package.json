@@ -1,29 +1,34 @@
 {
-    "name": "freb",
-    "version": "0.1.0",
-    "description": " A front-end project build tools",
-    "main": "index.js",
-    "bin": {
-        "freb": "./bin/freb"
-    },
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "node test/all.js"
-    },
-    "keywords": [
-        "freb",
-        "front-end"
-    ],
-    "author": "youlai",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/muyi0327/freb/issues",
-        "email": "yfdezhuye@163.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:muyi0327/freb.git"
-    }
+  "name": "freb",
+  "version": "0.1.0",
+  "description": " A front-end project build tools",
+  "main": "index.js",
+  "bin": {
+    "freb": "./bin/freb"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "keywords": [
+    "freb",
+    "front-end"
+  ],
+  "author": "youlai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muyi0327/freb/issues",
+    "email": "yfdezhuye@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:muyi0327/freb.git"
+  },
+  "devDependencies": {
+    "commander": "^2.5.0",
+    "ejs": "^1.0.0",
+    "promptly": "^0.2.0"
+  }
 }

@@ -29,6 +29,7 @@
   "devDependencies": {
     "commander": "^2.5.0",
     "ejs": "^1.0.0",
+    "native-promise-only": "^0.7.6-a",
     "promptly": "^0.2.0"
   }
 }

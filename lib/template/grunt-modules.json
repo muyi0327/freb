@@ -1,0 +1,9 @@
+[
+    "grunt-contrib-uglify",
+    "grunt-contrib-usemin",
+    "grunt-contrib-cssmin",
+    "grunt-contrib-copy",
+    "grunt-contrib-watch",
+    "grunt-contrib-concat",
+    "grunt-contrib-jshint"
+]

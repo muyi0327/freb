@@ -1,0 +1,9 @@
+[
+    "gulp-uglify",
+    "gulp-usemin",
+    "gulp-cssmin",
+    "gulp-copy",
+    "gulp-watch",
+    "gulp-concat",
+    "gulp-jshint"
+]

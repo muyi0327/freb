@@ -1,4 +1,43 @@
 #!/usr/bin/env node
-var freb = require('../lib/freb.js');
+var freb = require('../lib/freb.js'),
+    program = require('commander'),
+    pkg = require('../package.json'),
+    mkdirp = require('mkdirp'),
+    version = pkg.version;
 
-freb.init();
+program
+    .version(version)
+    .option('-g, --grunt', 'use grunt tools')
+    .option('-G, --gulp', 'use gulp tools')
+    .option('-l, --less', 'use less tools')
+    .option('-s, --sass', 'use sass tools');
+
+
+if (program.grunt) program.build = 'grunt';
+
+if (program.gulp) program.build = 'gulp';
+
+if (program.sass) program.css = 'sass';
+
+if (program.less) program.css = 'less';
+
+console.log(program.grunt);
+
+freb.init(program);
+
+program.parse(process.argv);
+
+/**
+ * Mkdir -p.
+ *
+ * @param {String} path
+ * @param {Function} fn
+ */
+
+function mkdir(path, fn) {
+    mkdirp(path, 0755, function(err){
+        if (err) throw err;
+        console.log('   \033[36mcreate\033[0m : ' + path);
+        fn && fn();
+    });
+}

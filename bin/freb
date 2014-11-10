@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var freb = require('../lib/freb.js'),
     program = require('commander'),
+    promptly = require('promptly'),
     pkg = require('../package.json'),
     mkdirp = require('mkdirp'),
     version = pkg.version;
@@ -20,8 +21,6 @@ if (program.gulp) program.build = 'gulp';
 if (program.sass) program.css = 'sass';
 
 if (program.less) program.css = 'less';
-
-console.log(program.grunt);
 
 freb.init(program);
 
